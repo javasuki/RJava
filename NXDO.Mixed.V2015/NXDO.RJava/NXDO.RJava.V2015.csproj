@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{390C04DF-03B5-4BF9-80E0-1242B24A72CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NXDO.RJava</RootNamespace>
+    <AssemblyName>NXDO.RJava.V2015</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>bin\Debug\NXDO.RJava.V2015.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>my.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\JAssemblyAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\JClassAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\JEnumAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\JFieldAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\JInterfaceAttribute.cs" />
+    <Compile Include="Attributes\JMethodAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\JParameterAttribute.cs" />
+    <Compile Include="CoreParam\JMReturn.cs" />
+    <Compile Include="CoreParam\JPBoolean.cs" />
+    <Compile Include="CoreParam\JPByte.cs" />
+    <Compile Include="CoreParam\JPCharacter.cs" />
+    <Compile Include="CoreParam\JPClass.cs" />
+    <Compile Include="CoreParam\JPConstructor.cs" />
+    <Compile Include="CoreParam\JPDateTime.cs" />
+    <Compile Include="CoreParam\JPDecimal.cs" />
+    <Compile Include="CoreParam\JPDouble.cs" />
+    <Compile Include="CoreParam\JPEnum.cs" />
+    <Compile Include="CoreParam\JPField.cs" />
+    <Compile Include="CoreParam\JPFloat.cs" />
+    <Compile Include="CoreParam\JPInt.cs" />
+    <Compile Include="CoreParam\JPLong.cs" />
+    <Compile Include="CoreParam\JPMethod.cs" />
+    <Compile Include="CoreParam\JPObject.cs" />
+    <Compile Include="CoreParam\JPShort.cs" />
+    <Compile Include="CoreParam\JPString.cs" />
+    <Compile Include="CoreParam\JPSubObject.cs" />
+    <Compile Include="Core\JDictionary.cs" />
+    <Compile Include="Core\JQueue.cs" />
+    <Compile Include="Core\JStack.cs" />
+    <Compile Include="JCSharp.cs" />
+    <Compile Include="D.cs" />
+    <Compile Include="Extension\JClassExtension.cs" />
+    <Compile Include="Extension\JEnumerableExtension.cs" />
+    <Compile Include="Extension\JObjectExtension.cs" />
+    <Compile Include="Core\IRJavaDefine.cs" />
+    <Compile Include="JActivator.cs" />
+    <Compile Include="JAssembly.cs" />
+    <Compile Include="JBox.cs" />
+    <Compile Include="JCacheInfo.cs" />
+    <Compile Include="JClass.cs" />
+    <Compile Include="JClassT.cs" />
+    <Compile Include="JDynamic.cs" />
+    <Compile Include="JDynamicObject.cs" />
+    <Compile Include="JEmitInterface.cs" />
+    <Compile Include="JInvokeHelper.cs" />
+    <Compile Include="Core\JList.cs" />
+    <Compile Include="JObject.cs" />
+    <Compile Include="JUnknown.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\JConstructor.cs" />
+    <Compile Include="Reflection\JField.cs" />
+    <Compile Include="Reflection\JMethod.cs" />
+    <Compile Include="Reflection\JParameter.cs" />
+    <Compile Include="Reflection\JParamInfoInternal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="my.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NXDO.RJava.Core\NXDO.JBridge.X64.vcxproj">
+      <Project>{a68075ba-d4d3-4c68-855e-4c1705752db0}</Project>
+      <Name>NXDO.RJava.Core.X64</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

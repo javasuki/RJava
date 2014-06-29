@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "NXDO.JBridge.X64"
+    </assembly>
+    <members>
+        <member name="M:NXDO.JBridge.JRunEnvironment.Load(System.String)">
+            <summary>
+装载java程序集
+</summary>
+            <param name="jarName">java程序集路径，可使用与应用程序启动目录的相对路径。</param>
+        </member>
+        <member name="M:NXDO.JBridge.JRunEnvironment.#ctor(System.String,System.Int32)">
+            <summary>
+建立java运行时桥接环境
+</summary>
+            <param name="JvmFileName">指定jvm.dll的全路径。</param>
+            <param name="jdkVersion">JDK版本。5：jdk5，6：jdk6，7：jdk7 以此类推，但必须确保您的主机安装有该版本的JDK。</param>
+        </member>
+        <member name="M:NXDO.JBridge.JRunEnvironment.#ctor(System.String)">
+            <summary>
+建立java运行时桥接环境
+<para>使用JDK6启动JVM</para></summary>
+            <param name="JvmFileName">指定jvm.dll的全路径。</param>
+        </member>
+        <member name="M:NXDO.JBridge.JRunEnvironment.#ctor(System.Int32)">
+            <summary>
+建立java运行时桥接环境
+<para>从环境变量[JAVA_HOME]中启动JVM（JDK6）</para></summary>
+            <param name="jdkVersion">JDK版本。5：jdk5，6：jdk6，7：jdk7 以此类推，但必须确保您的主机安装有该版本的JDK。</param>
+        </member>
+        <member name="M:NXDO.JBridge.JRunEnvironment.#ctor">
+            <summary>
+建立java运行时桥接环境
+<para>从环境变量[JAVA_HOME]中启动JVM（默认使用 JDK6）。</para></summary>
+        </member>
+        <member name="T:NXDO.JBridge.JRunEnvironment">
+            <summary>
+java运行时桥接环境
+</summary>
+        </member>
+    </members>
+</doc>

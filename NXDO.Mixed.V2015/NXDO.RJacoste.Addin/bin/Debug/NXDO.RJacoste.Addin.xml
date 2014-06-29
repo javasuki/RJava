@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NXDO.RJacoste.Addin</name>
+    </assembly>
+    <members>
+        <member name="M:NXDO.RJacoste.Addin.AxImage.StdPicture(System.String)">
+            <summary>
+            得到图片
+            </summary>
+            <param name="Image"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NXDO.RJacoste.Addin.Connect">
+            <summary>用于实现外接程序的对象。</summary>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:NXDO.RJacoste.Addin.Connect.#ctor">
+            <summary>实现外接程序对象的构造函数。请将您的初始化代码置于此方法内。</summary>
+        </member>
+        <member name="M:NXDO.RJacoste.Addin.Connect.OnConnection(System.Object,Extensibility.ext_ConnectMode,System.Object,System.Array@)">
+            <summary>实现 IDTExtensibility2 接口的 OnConnection 方法。接收正在加载外接程序的通知。</summary>
+            <param term='application'>宿主应用程序的根对象。</param>
+            <param term='connectMode'>描述外接程序的加载方式。</param>
+            <param term='addInInst'>表示此外接程序的对象。</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:NXDO.RJacoste.Addin.Connect.OnDisconnection(Extensibility.ext_DisconnectMode,System.Array@)">
+            <summary>实现 IDTExtensibility2 接口的 OnDisconnection 方法。接收正在卸载外接程序的通知。</summary>
+            <param term='disconnectMode'>描述外接程序的卸载方式。</param>
+            <param term='custom'>特定于宿主应用程序的参数数组。</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:NXDO.RJacoste.Addin.Connect.OnAddInsUpdate(System.Array@)">
+            <summary>实现 IDTExtensibility2 接口的 OnAddInsUpdate 方法。当外接程序集合已发生更改时接收通知。</summary>
+            <param term='custom'>特定于宿主应用程序的参数数组。</param>
+            <seealso class='IDTExtensibility2' />		
+        </member>
+        <member name="M:NXDO.RJacoste.Addin.Connect.OnStartupComplete(System.Array@)">
+            <summary>实现 IDTExtensibility2 接口的 OnStartupComplete 方法。接收宿主应用程序已完成加载的通知。</summary>
+            <param term='custom'>特定于宿主应用程序的参数数组。</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:NXDO.RJacoste.Addin.Connect.OnBeginShutdown(System.Array@)">
+            <summary>实现 IDTExtensibility2 接口的 OnBeginShutdown 方法。接收正在卸载宿主应用程序的通知。</summary>
+            <param term='custom'>特定于宿主应用程序的参数数组。</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+    </members>
+</doc>
